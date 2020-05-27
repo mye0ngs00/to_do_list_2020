@@ -35,7 +35,7 @@ class EventPractice extends React.Component {
                     name="username"
                     onChange={this.handler_onChange}
                     value={this.state.username}
-                />
+                />test
 
                 <input
                     type="text"
