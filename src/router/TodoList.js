@@ -26,13 +26,15 @@ class TodoList extends React.Component {
         this.input.focus();
     }
 
-    handlerDelete = () => {
-        //TODO: delete
+    handlerDelete = (idx) => {
+        this.setState(current => ({
+            items: current.items.filter((item, i)=>{ return i !== idx})
+        }));
     }
 
     render() {
         const itemList = this.state.items.map((item, idx) => (
-            <li key={idx} onDoubleClick={this.handlerDelete}>{item}</li>
+            <li key={idx} onDoubleClick={()=>{this.handlerDelete(idx)}}>{item}</li>
         ));
 
         return (
