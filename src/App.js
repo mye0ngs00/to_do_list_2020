@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import ValidationSample from './ValidationSample';
+import EventPractice from './EventPractice';
 
 function App() {
   return (
-    <ValidationSample/>
+    <EventPractice/>
   );
 }
 
