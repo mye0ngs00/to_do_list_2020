@@ -1,10 +1,13 @@
 import React from 'react';
 import './App.css';
-import EventPractice from './EventPractice';
+import { HashRouter, Route } from 'react-router-dom';
+import TodoList from './router/TodoList';
 
 function App() {
   return (
-    <EventPractice/>
+    <HashRouter>
+      <Route path='/' exact={true} component={TodoList} />
+    </HashRouter>
   );
 }
 
