@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import PageTemplate from './PageTemplate';
 
 class App extends Component{
   render() {
     return (
       <div>
-        일정 관리
+        <PageTemplate />
       </div>
     )
   }
