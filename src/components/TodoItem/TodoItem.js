@@ -7,6 +7,7 @@ const cx = classNames.bind(styles);
 /*
     아이템 관리
 */
+
 class TodoItem extends React.Component {
     shouldComponentUpdate(nextProps, nextState){
         return this.props.done !== nextProps.done;
