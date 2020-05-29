@@ -3,9 +3,9 @@ import TodoItem from '../TodoItem';
 
 class TodoList extends React.Component{
     render(){
-        const { todos } = this.props;
+        const { todos, onToggle } = this.props;
         const todoList = todos.map((item)=>(
-            <TodoItem key={item.id} done={item.done}>
+            <TodoItem key={item.id} done={item.done} onToggle={()=>onToggle(item.id)}>
                 {item.text}
             </TodoItem>
         ));
