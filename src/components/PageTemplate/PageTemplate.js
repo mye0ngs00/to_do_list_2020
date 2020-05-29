@@ -6,7 +6,6 @@ const cx = classNames.bind(styles);
 
 /*
     페이지 템플릿을 위한 컴포넌트. 페이지의 틀, 타이틀, 콘텐츠 등 속성 설정.
-
 */
 
 const PageTemplate = ({children}) => {

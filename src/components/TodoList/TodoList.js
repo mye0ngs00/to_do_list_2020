@@ -3,14 +3,16 @@ import TodoItem from '../TodoItem';
 
 class TodoList extends React.Component{
     render(){
+        const { todos } = this.props;
+        const todoList = todos.map((item)=>(
+            <TodoItem key={item.id} done={item.done}>
+                {item.text}
+            </TodoItem>
+        ));
+
         return(
             <div>
-                <TodoItem done>
-                    리액트 공부하기
-                </TodoItem>
-                <TodoItem>
-                    컴포넌트 스타일링
-                </TodoItem>
+                {todoList}
             </div>
         );
     }
