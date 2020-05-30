@@ -3,6 +3,10 @@ import styles from './TodoInput.module.scss';
 import classNames from 'classnames/bind';
 
 const cx = classNames.bind(styles);
+
+/*
+    아이템 입력 창 관리
+*/
 const TodoInput = ({ value, onChange, onInsert }) => {
     const handleKeyPress = (e) => {
         if (e.key === 'Enter') {
