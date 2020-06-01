@@ -5,12 +5,12 @@ class TodoList extends React.Component {
     render() {
         const { todos, onToggle, onRemove } = this.props;
         const todoList = todos.map((item) => (
-            <TodoItem key={item.id}
-                done={item.done}
-                onToggle={() => onToggle(item.id)}
-                onRemove={() => onRemove(item.id)}
+            <TodoItem key={item.get('id')}
+                done={item.get('done')}
+                onToggle={() => onToggle(item.get('id'))}
+                onRemove={() => onRemove(item.get('id'))}
             >
-                {item.text}
+                {item.get('text')}
             </TodoItem>
         ));
 
