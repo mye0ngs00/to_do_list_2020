@@ -9,18 +9,7 @@ export const insert = createAction(INSERT);
 export const toggle = createAction(TOGGLE);
 export const remove = createAction(REMOVE);
 
-const initialState = List([
-    Map({
-        id: 0,
-        text: 'study react',
-        done: true
-    }),
-    Map({
-        id: 1,
-        text: 'styling component',
-        done: false
-    })
-]);
+const initialState = List([]);
 
 export default handleActions({
     [INSERT]: (state, action)=>{
